@@ -1,10 +1,6 @@
-# E-Commerce API (Final Project Sanbercode)
+# E-Commerce API
 
 This Final Project E-Commerce API provides a set of endpoints to manage an e-commerce by `Bagus Dermawan Mulya`. It allows for the management of products, categories, users, and orders. This API is designed to support the creation, retrieval, updating, and deletion of resources within an e-commerce platform.
-
-#### Deploy version with Railway App:
-
-https://sanber-be-final-project-bagus-production.up.railway.app/
 
 ## Features
 
