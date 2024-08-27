@@ -123,7 +123,14 @@ export default {
     }
   },
   async register(req: Request, res: Response) {
-    const { fullName, username, email, password, roles = ["user"] } = req.body;
+    const {
+      fullName,
+      username,
+      email,
+      password,
+      roles = ["user"],
+      profilePicture = "default.jpg",
+    } = req.body;
     try {
       await validateRegisterSchema.validate({
         fullName,
@@ -138,6 +145,7 @@ export default {
         email,
         password,
         roles,
+        profilePicture,
       });
       res.json({
         message: "User registered successfully",
