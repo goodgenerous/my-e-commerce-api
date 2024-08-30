@@ -96,7 +96,7 @@ export default {
           message: "Failed get product",
         });
       }
-      const result = await ProductsModel.findById(id);
+      const result = await ProductsModel.findById(id).populate("category");
       if (!result) {
         return res.status(404).json({
           data: "null",
