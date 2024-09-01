@@ -8,6 +8,12 @@ const CategoriesSchema = new Schema(
       type: String,
       required: true,
     },
+    products: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Products",
+      },
+    ],
   },
   {
     timestamps: true,
